@@ -1,7 +1,7 @@
 package com.bridgelabz;
 
 public class FindMaximum {
-    public static int giveMaximum(Integer num1, Integer num2, Integer num3) {
+    public static float giveMaximum(Float num1, Float num2, Float num3) {
         if (num1.compareTo(num2) > 0) {
             if (num1.compareTo(num3) > 0) {
                 return num1;
