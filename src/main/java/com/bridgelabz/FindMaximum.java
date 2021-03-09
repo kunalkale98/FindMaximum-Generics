@@ -1,17 +1,17 @@
 package com.bridgelabz;
 
 public class FindMaximum {
-    public static String giveMaximum(String first, String second, String third) {
-        if (first.compareTo(second) > 0) {
-            if (first.compareTo(third) > 0) {
-                return first;
+    public static <T extends Comparable> T giveMaximum(T input1, T input2, T input3) {
+        if (input1.compareTo(input2) > 0) {
+            if (input1.compareTo(input3) > 0) {
+                return input1;
             } else {
-                return third;
+                return input3;
             }
-        } else if (second.compareTo(third) > 0) {
-            return second;
+        } else if (input2.compareTo(input3) > 0) {
+            return input2;
         } else {
-            return third;
+            return input3;
         }
     }
 }
